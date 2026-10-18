@@ -1,165 +1,169 @@
 <!doctype html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Galeria – Poznaj Polskę</title>
 </head>
+
 <body>
 
-<header>
-    <a href="index.html" class="logo">Poznaj Polskę</a>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <header>
+        <a href="index.html" class="logo">Poznaj Polskę</a>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="gallery.html">Galeria</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </header>
 
-<main>
-    <section class="gallery-intro">
-        <h1>Galeria zdjęć miast Polski</h1>
-        <video autoplay muted loop controls src="video.webm"></video>
-    </section>
-
-    <nav class="gallery-filters">
-        <button type="button" class="filter-btn active">Kraków</button>
-        <button type="button" class="filter-btn">Warszawa</button>
-        <button type="button" class="filter-btn">Wrocław</button>
-        <button type="button" class="filter-btn">Poznań</button>
-    </nav>
-
-    <div class="gallery-content">
-
-        <section id="krakow" class="city-gallery">
-            <h2>Kraków</h2>
-            <div class="gallery-grid">
-                <figure class="gallery-card">
-                    <img src="sukiennice.jpg" alt="Sukiennice w Krakowie">
-                    <figcaption>Sukiennice</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="wawel.jpg" alt="Zamek Królewski na Wawelu">
-                    <figcaption>Zamek Królewski na Wawelu</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="kosciol-mariacki.jpg" alt="Kościół Mariacki w Krakowie">
-                    <figcaption>Kościół Mariacki</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="kazimierz.jpg" alt="Zabytkowy Kazimierz w Krakowie">
-                    <figcaption>Dzielnica Kazimierz</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="barbakan.jpg" alt="Barbakan w Krakowie">
-                    <figcaption>Barbakan Krakowski</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="kopiec-kosciuszki.jpg" alt="Kopiec Kościuszki w Krakowie">
-                    <figcaption>Kopiec Kościuszki</figcaption>
-                </figure>
-            </div>
+    <main>
+        <section class="gallery-intro">
+            <h1>Galeria zdjęć miast Polski</h1>
+            <video autoplay muted loop controls playsinline>
+                <source src="POLAND. More than you expected _ Episode 1_ Warsaw.mp4" type="video/mp4">
+                Twoja przeglądarka nie obsługuje tagu wideo.
+            </video>
         </section>
 
-        <!-- WARSZAWA -->
-        <section id="warszawa" class="city-gallery" hidden>
-            <h2>Warszawa</h2>
-            <div class="gallery-grid">
-                <figure class="gallery-card">
-                    <img src="palac-kultury.jpg" alt="Pałac Kultury i Nauki w Warszawie">
-                    <figcaption>Pałac Kultury i Nauki</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="zamek-krolewski-warszawa.jpg" alt="Zamek Królewski w Warszawie">
-                    <figcaption>Zamek Królewski</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="lazienki-krolewskie.jpg" alt="Łazienki Królewskie w Warszawie">
-                    <figcaption>Łazienki Królewskie</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="starowka-warszawa.jpg" alt="Rynek Starego Miasta w Warszawie">
-                    <figcaption>Rynek Starego Miasta</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="muzeum-powstania.jpg" alt="Muzeum Powstania Warszawskiego">
-                    <figcaption>Muzeum Powstania Warszawskiego</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="palac-wilanow.jpg" alt="Pałac w Wilanowie">
-                    <figcaption>Pałac w Wilanowie</figcaption>
-                </figure>
-            </div>
-        </section>
+        <nav class="gallery-filters">
+            <a href="#krakow" class="filter-btn">Kraków</a>
+            <a href="#warszawa" class="filter-btn">Warszawa</a>
+            <a href="#wroclaw" class="filter-btn">Wrocław</a>
+            <a href="#poznan" class="filter-btn">Poznań</a>
+        </nav>
 
-        <!-- WROCŁAW -->
-        <section id="wroclaw" class="city-gallery" hidden>
-            <h2>Wrocław</h2>
-            <div class="gallery-grid">
-                <figure class="gallery-card">
-                    <img src="ostrow-tumski-wroclaw.jpg" alt="Ostrów Tumski we Wrocławiu">
-                    <figcaption>Ostrów Tumski</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="rynek-wroclaw.jpg" alt="Rynek i Ratusz we Wrocławiu">
-                    <figcaption>Wrocławski Rynek</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="hala-stulecia.jpg" alt="Hala Stulecia we Wrocławiu">
-                    <figcaption>Hala Stulecia</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="most-grunwaldzki.jpg" alt="Most Grunwaldzki we Wrocławiu">
-                    <figcaption>Most Grunwaldzki</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="panorama-raclawicka.jpg" alt="Muzeum Panorama Racławicka">
-                    <figcaption>Panorama Racławicka</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="krasnale-wroclawskie.jpg" alt="Krasnale Wrocławskie">
-                    <figcaption>Wrocławskie Krasnale</figcaption>
-                </figure>
-            </div>
-        </section>
+        <div class="gallery-content">
 
-        <!-- POZNAŃ -->
-        <section id="poznan" class="city-gallery" hidden>
-            <h2>Poznań</h2>
-            <div class="gallery-grid">
-                <figure class="gallery-card">
-                    <img src="koziolki-poznanskie.jpg" alt="Ratusz i Koziołki Poznańskie">
-                    <figcaption>Koziołki Poznańskie</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="ostrow-tumski-poznan.jpg" alt="Ostrów Tumski w Poznaniu">
-                    <figcaption>Ostrów Tumski</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="stary-browar.jpg" alt="Centrum Sztuki i Biznesu Stary Browar">
-                    <figcaption>Stary Browar</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="zamek-cesarski.jpg" alt="Zamek Cesarski w Poznaniu">
-                    <figcaption>Zamek Cesarski</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="jezioro-malta.jpg" alt="Jezioro Maltańskie w Poznaniu">
-                    <figcaption>Jezioro Maltańskie</figcaption>
-                </figure>
-                <figure class="gallery-card">
-                    <img src="palmiarnia-poznanska.jpg" alt="Palmiarnia Poznańska">
-                    <figcaption>Palmiarnia Poznańska</figcaption>
-                </figure>
-            </div>
-        </section>
-    </div>
-</main>
+            <section id="krakow" class="city-gallery">
+                <h2>Kraków</h2>
+                <div class="gallery-grid">
+                    <figure class="gallery-card">
+                        <img src="sukiennice.jpg" alt="Sukiennice w Krakowie">
+                        <figcaption>Sukiennice</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="wawel.jpg" alt="Zamek Królewski na Wawelu">
+                        <figcaption>Zamek Królewski na Wawelu</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="kosciol-mariacki.jpg" alt="Kościół Mariacki w Krakowie">
+                        <figcaption>Kościół Mariacki</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="kazimierz.jpg" alt="Zabytkowy Kazimierz w Krakowie">
+                        <figcaption>Dzielnica Kazimierz</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="barbakan.jpg" alt="Barbakan w Krakowie">
+                        <figcaption>Barbakan Krakowski</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="kopiec-kosciuszki.jpg" alt="Kopiec Kościuszki w Krakowie">
+                        <figcaption>Kopiec Kościuszki</figcaption>
+                    </figure>
+                </div>
+            </section>
 
-<footer>
-    <p> 2026 Poznaj Polskę. Projekt wykonał: Piotr Banaś</p>
-</footer>
+            <section id="warszawa" class="city-gallery">
+                <h2>Warszawa</h2>
+                <div class="gallery-grid">
+                    <figure class="gallery-card">
+                        <img src="palac-kultury.jpg" alt="Pałac Kultury i Nauki w Warszawie">
+                        <figcaption>Pałac Kultury i Nauki</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="zamek-krolewski-warszawa.jpg" alt="Zamek Królewski w Warszawie">
+                        <figcaption>Zamek Królewski</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="lazienki-krolewskie.jpg" alt="Łazienki Królewskie w Warszawie">
+                        <figcaption>Łazienki Królewskie</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="starowka-warszawa.jpg" alt="Rynek Starego Miasta w Warszawie">
+                        <figcaption>Rynek Starego Miasta</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="muzeum-powstania.jpg" alt="Muzeum Powstania Warszawskiego">
+                        <figcaption>Muzeum Powstania Warszawskiego</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="palac-wilanow.jpg" alt="Pałac w Wilanowie">
+                        <figcaption>Pałac w Wilanowie</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section id="wroclaw" class="city-gallery">
+                <h2>Wrocław</h2>
+                <div class="gallery-grid">
+                    <figure class="gallery-card">
+                        <img src="ostrow-tumski-poznan.jpg" alt="Ostrów Tumski we Wrocławiu">
+                        <figcaption>Ostrów Tumski</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="rynek-wroclaw.jpg" alt="Rynek i Ratusz we Wrocławiu">
+                        <figcaption>Wrocławski Rynek</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="hala-stulecia.jpg" alt="Hala Stulecia we Wrocławiu">
+                        <figcaption>Hala Stulecia</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="most-grunwaldzki.jpg" alt="Most Grunwaldzki we Wrocławiu">
+                        <figcaption>Most Grunwaldzki</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="panorama-raclawicka.jpg" alt="Muzeum Panorama Racławicka">
+                        <figcaption>Panorama Racławicka</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="krasnale-wroclawskie.jpg" alt="Krasnale Wrocławskie">
+                        <figcaption>Wrocławskie Krasnale</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section id="poznan" class="city-gallery">
+                <h2>Poznań</h2>
+                <div class="gallery-grid">
+                    <figure class="gallery-card">
+                        <img src="koziolki-poznanskie.jpg" alt="Ratusz i Koziołki Poznańskie">
+                        <figcaption>Koziołki Poznańskie</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="ostrow-tumski-poznan.jpg" alt="Ostrów Tumski w Poznaniu">
+                        <figcaption>Ostrów Tumski</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="stary-browar.jpg" alt="Centrum Sztuki i Biznesu Stary Browar">
+                        <figcaption>Stary Browar</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="zamek-cesarski.jpg" alt="Zamek Cesarski w Poznaniu">
+                        <figcaption>Zamek Cesarski</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="jezioro-malta.jpg" alt="Jezioro Maltańskie w Poznaniu">
+                        <figcaption>Jezioro Maltańskie</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="palmiarnia-poznanska.jpg" alt="Palmiarnia Poznańska">
+                        <figcaption>Palmiarnia Poznańska</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p> 2026 Poznaj Polskę. Projekt wykonał: Piotr Banaś</p>
+    </footer>
 
 </body>
+
 </html>
