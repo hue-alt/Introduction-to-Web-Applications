@@ -32,4 +32,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const savedCity = localStorage.getItem('preferredCity');
     if (savedCity) filterGallery(savedCity);
+
+    if (!document.cookie.includes('visited=true')) {
+        document.cookie = 'visited=true; path=/; max-age=86400';
+    }
+
+    const form = document.querySelector('form');
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value.trim();
+            const fullname = document.getElementById('fullname').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!email || !fullname || !message) {
+                alert('Proszę wypełnić wszystkie pola formularza!');
+                return;
+            }
+
+            if (!email.includes('@')) {
+                alert('Podaj poprawny adres e-mail!');
+                return;
+            }
+
+            alert('Wiadomość została wysłana!');
+            form.reset();
+        });
+    }
 });
