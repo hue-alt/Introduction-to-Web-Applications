@@ -351,3 +351,14 @@ footer {
 footer p {
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
