@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html">Poznaj Polskę</a>
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="gallery.html">Galeria</a>
+        <a href="contact.html">Kontakt</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h1>Skontaktuj się z nami!</h1>
+        <p>Adres email: admin@gmail.com</p>
+    </section>
+
+    <section>
+        <h2>Formularz kontaktowy</h2>
+
+        <form action="#" method="post">
+            <div>
+                <label for="email">Podaj email:</label>
+                <br><br>
+                <input type="email" id="email" name="email" minlength="5" maxlength="60" placeholder="Email" required>
+            </div>
+            <br><br>
+            <div>
+                <label for="fullname">Podaj swoje imię i nazwisko:</label>
+                <br><br>
+                <input type="text" id="fullname" name="fullname" minlength="3" maxlength="60" required>
+            </div>
+            <br><br>
+            <div>
+                <label for="subject">Podaj temat wiadomości:</label>
+                <br><br>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Wybierz temat zapytania...</option>
+                    <option value="new content">Dodanie nowych treści</option>
+                    <option value="city">Pytanie o konkretne miasto</option>
+                    <option value="bug">Zgłoszenie błędów technicznych</option>
+                    <option value="colaborate">Propozycja współpracy</option>
+                    <option value="other">Inne</option>
+                </select>
+            </div>
+            <br><br>
+            <div>
+                <label for="message">Treść wiadomości:</label>
+                <br><br>
+                <textarea id="message" name="message" rows="5" cols="50" placeholder="Rozpocznij swoją wiadomość..." required></textarea>
+            </div>
+            <br><br>
+            <div>
+                <button type="submit">Wyślij</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>2026 Poznaj Polskę. Projekt wykonał: Piotr Banaś | Czas: <span id="clock"></span></p>
+</footer>
+
+</body>
+</html>
